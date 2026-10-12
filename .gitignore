@@ -5,11 +5,11 @@ env/
 .env
 
 # Unused Data Files
-auto-mpg.data
-billboard.csv
-cars.csv
-diabetes.csv
-pew-raw.csv
+data/auto-mpg.data
+data/billboard.csv
+data/cars.csv
+data/diabetes.csv
+data/pew-raw.csv
 
 # Python
 __pycache__/
