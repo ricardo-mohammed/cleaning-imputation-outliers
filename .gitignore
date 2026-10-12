@@ -2,6 +2,14 @@
 .venv/
 venv/
 env/
+.env
+
+# Unused Data Files
+auto-mpg.data
+billboard.csv
+cars.csv
+diabetes.csv
+pew-raw.csv
 
 # Python
 __pycache__/
