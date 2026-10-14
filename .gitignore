@@ -3,6 +3,7 @@
 venv/
 env/
 .env
+env
 
 # Unused Data Files
 data/auto-mpg.data
@@ -26,3 +27,4 @@ Thumbs.db
 
 # Original Submission
 week5Lab_Students.ipynb
+src/utils.py
