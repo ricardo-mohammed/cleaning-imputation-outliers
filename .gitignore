@@ -3,6 +3,7 @@
 venv/
 env/
 .env
+env
 
 # Unused Data Files
 data/auto-mpg.data
