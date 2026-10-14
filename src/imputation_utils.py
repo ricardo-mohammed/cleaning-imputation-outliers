@@ -187,3 +187,15 @@ def validate_cleaning(df, df_miss):
     plt.title('Missing Values Before vs After Cleaning')
     plt.ylabel('Number of Missing Values')
     plt.show()
+
+
+# Method of  Upload Cleaned Data to PostgreSQL Database
+
+def upload_to_database(df, engine, table_name):
+    df.to_sql(
+        name=table_name,
+        con=engine,
+        if_exists='fail',
+        index=False
+    )
+    print("Data uploaded successfully!")
