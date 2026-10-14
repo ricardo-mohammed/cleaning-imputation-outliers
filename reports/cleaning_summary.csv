@@ -1,0 +1,15 @@
+metric,value
+raw_rows,8128
+raw_columns,13
+exact_repeated_rows_excluded,1202
+invalid_essential_rows_excluded,0
+clean_rows,6926
+power_nonpositive_changed_to_missing,3
+economy_nonpositive_changed_to_missing,15
+fuel_economy_units_inferred,208
+price_iqr_flags_retained,328
+torque_missing_retained,209
+engine_cc_imputed,208
+max_power_bhp_imputed,209
+fuel_economy_value_imputed,223
+seats_count_imputed,208

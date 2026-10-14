@@ -1,0 +1,30 @@
+{
+  "source": "CarDekho: Car details v3.csv, supplied by user",
+  "source_url": "https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho",
+  "source_sha256": "1b2a30b2f36fd246366773fe5375399692f1a113890ad2a6d464b8c8deaadadb",
+  "policy_version": "cardekho-cleaning-v1",
+  "generated_at_utc": "2026-10-14T16:51:10.567226+00:00",
+  "metrics": {
+    "raw_rows": 8128,
+    "raw_columns": 13,
+    "exact_repeated_rows_excluded": 1202,
+    "invalid_essential_rows_excluded": 0,
+    "clean_rows": 6926,
+    "power_nonpositive_changed_to_missing": 3,
+    "economy_nonpositive_changed_to_missing": 15,
+    "fuel_economy_units_inferred": 208,
+    "price_iqr_flags_retained": 328,
+    "torque_missing_retained": 209,
+    "engine_cc_imputed": 208,
+    "max_power_bhp_imputed": 209,
+    "fuel_economy_value_imputed": 223,
+    "seats_count_imputed": 208
+  },
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2",
+    "scikit-learn": "1.9.1"
+  },
+  "database_status": "not attempted; see notebook database section"
+}
