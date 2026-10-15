@@ -8,12 +8,12 @@ The team practised Agile task classification by organizing the assignment into f
 
 ## Team Contributions
 
-| Team member | Assigned task | Notebook |
-|---|---|---|
-| Ricardo | Data tidying and reshaping | `tidying_reshaping.ipynb` |
-| Zeyneb | Missing-value analysis and imputation | `imputation.ipynb` |
-| Senay | Data cleaning and string manipulation | `cleaning_lab.ipynb` |
-| Juan | Anomaly/outlier detection and feature engineering | `outlier_detection.ipynb` |
+| Team member | Assigned task                                     | Notebook                  |
+| ----------- | ------------------------------------------------- | ------------------------- |
+| Ricardo     | Data tidying and reshaping                        | `tidying_reshaping.ipynb` |
+| Zeyneb      | Missing-value analysis and imputation             | `imputation.ipynb`        |
+| Senay       | Data cleaning and string manipulation             | `cleaning_lab.ipynb`      |
+| Juan        | Anomaly/outlier detection and feature engineering | `outlier_detection.ipynb` |
 
 The task categories provided clear ownership while allowing each member to apply the relevant techniques to an appropriate dataset. The notebooks use a shared project structure and database-access approach. Each dataset remains a separate case study with its own observations and processing decisions.
 
@@ -51,12 +51,12 @@ The notebook uploads the source data to Neon and reads it back for analysis. It 
 
 **Recorded result:** All 45,211 records are preserved, and the dataset expands from 17 to 28 columns.
 
-| Feature | Z-score flags | IQR flags |
-|---|---:|---:|
-| Age | 381 | 487 |
-| Balance | 745 | 4,729 |
-| Duration | 963 | 3,235 |
-| Campaign | 840 | 3,064 |
+| Feature  | Z-score flags | IQR flags |
+| -------- | ------------: | --------: |
+| Age      |           381 |       487 |
+| Balance  |           745 |     4,729 |
+| Duration |           963 |     3,235 |
+| Campaign |           840 |     3,064 |
 
 These counts refer to flags within each feature; one record can be flagged for multiple features.
 
@@ -64,13 +64,13 @@ These counts refer to flags within each feature; one record can be flagged for m
 
 Database access uses SQLAlchemy, a PostgreSQL driver, and environment variables loaded with `python-dotenv`. The shared connection class is `DatabaseManager` in `src/neon_connect.py`. The imputation notebook also uses functions from `src/imputation_utils.py` and a SQLAlchemy engine for database retrieval.
 
-| Notebook | Neon table | Records shown in saved results |
-|---|---|---:|
-| Tidying and reshaping | `tidying_who_tb` | 76,046 |
-| Imputation | `pew_religion_cleaned` | 36,908 |
-| Cleaning | `cardekho_clean` | 6,926 |
-| Outlier detection — source | `bank_marketing_raw` | 45,211 |
-| Outlier detection — processed | `bank_marketing_processed` | 45,211 |
+| Notebook                      | Neon table                 | Records shown in saved results |
+| ----------------------------- | -------------------------- | -----------------------------: |
+| Tidying and reshaping         | `tidying_who_tb`           |                         76,046 |
+| Imputation                    | `pew_religion_cleaned`     |                         36,908 |
+| Cleaning                      | `cardekho_clean`           |                          6,926 |
+| Outlier detection — source    | `bank_marketing_raw`       |                         45,211 |
+| Outlier detection — processed | `bank_marketing_processed` |                         45,211 |
 
 The notebooks document uploads, SQL retrieval, and row-count or shape checks. Uploads using `if_exists="replace"` refresh the named tables during reruns. Database credentials are stored outside the notebooks and excluded from version control.
 
@@ -91,6 +91,8 @@ The WHO diagnostic-code extraction currently recognizes only part of the availab
 ## Data Sources
 
 - **WHO tuberculosis notifications:** [WHO dataset distributed with tidyr](https://raw.githubusercontent.com/tidyverse/tidyr/master/data-raw/who.csv).
-- **Religious and demographic survey:** the local `pew_religion.csv` dataset referenced in `imputation.ipynb`.
+- **Religious and demographic survey:** the local `pew_religion.csv` dataset referenced in `imputation.ipynb`. https://www.pewresearch.org/dataset 2023-24-religious-landscape-study-rls-dataset/
 - **CarDekho used-car listings:** [Vehicle dataset — Nehal Birla, Kaggle](https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho).
 - **Bank Marketing:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/222/bank+marketing).
+
+## We have used the assistance of AI
