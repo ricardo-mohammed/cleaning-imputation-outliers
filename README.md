@@ -4,6 +4,8 @@
 
 This group project applies data-preprocessing techniques to four datasets through separate notebooks covering tidying, cleaning, imputation, and outlier detection. The work includes data inspection, string manipulation, missing-value treatment, feature engineering, visualization, and Neon PostgreSQL integration.
 
+At the end of the project, the individual notebooks completed by the team were combined into a single consolidated notebook, `lab2_all_sections.ipynb`, which brings together the full set of preprocessing work into one final submission.
+
 The team practised Agile task classification by organizing the assignment into four areas and assigning responsibility for each area. Each member completed their assigned contribution, and the four notebooks form the combined project submission.
 
 ## Team Contributions
