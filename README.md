@@ -97,4 +97,10 @@ The WHO diagnostic-code extraction currently recognizes only part of the availab
 - **CarDekho used-car listings:** [Vehicle dataset — Nehal Birla, Kaggle](https://www.kaggle.com/datasets/nehalbirla/vehicle-dataset-from-cardekho).
 - **Bank Marketing:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/222/bank+marketing).
 
-## We have used the assistance of AI
+##  AI Acknowledgement
+This project was developed with the assistance of an AI language model. AI was utilized as a productivity tool for:
+* **Code Scaffolding & Debugging:** Generating boilerplate code for database connections and data processing pipelines, and troubleshooting syntax or logic errors.
+* **Documentation:** Drafting and refining Markdown explanations to meet software engineering documentation standards.
+* **Brainstorming:** Exploring different imputation and outlier detection strategies.
+
+All AI-generated code and suggestions were rigorously reviewed, tested, modified, and fully understood by the author(s) before inclusion in the final submission. The analytical decisions, data interpretations, and final implementations remain the sole responsibility of the student(s).
